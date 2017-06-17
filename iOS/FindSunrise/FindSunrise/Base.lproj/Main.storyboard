@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FindSunrise" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter city name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gex-3D-ZGX">
+                                <rect key="frame" x="16" y="66" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sunrise time is 10:00AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqa-dT-48I">
+                                <rect key="frame" x="22" y="156" width="337" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWa-1H-ySK">
+                                <rect key="frame" x="180" y="289" width="179" height="49"/>
+                                <color key="backgroundColor" red="0.098109817180000003" green="0.52732371789999999" blue="0.26369978589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="2Zq-aq-KKt"/>
+                                    <constraint firstAttribute="width" constant="179" id="ana-gB-cDP"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Find Sunrise Time"/>
+                                <connections>
+                                    <action selector="buFindSunRise:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lQ3-vL-Awc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.082740746069999996" green="0.58637404439999996" blue="0.89219802074166665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vqa-dT-48I" firstAttribute="trailing" secondItem="gex-3D-ZGX" secondAttribute="trailing" id="36f-Xh-qhS"/>
+                            <constraint firstItem="gex-3D-ZGX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5QK-Y2-SEW"/>
+                            <constraint firstItem="gex-3D-ZGX" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WT8-cj-TKh"/>
+                            <constraint firstItem="vqa-dT-48I" firstAttribute="top" secondItem="gex-3D-ZGX" secondAttribute="bottom" constant="60" id="Z8I-l9-QTY"/>
+                            <constraint firstAttribute="trailing" secondItem="ZWa-1H-ySK" secondAttribute="trailing" constant="16" id="osP-jn-LU3"/>
+                            <constraint firstItem="gex-3D-ZGX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="sXu-FG-hJR"/>
+                            <constraint firstItem="ZWa-1H-ySK" firstAttribute="top" secondItem="vqa-dT-48I" secondAttribute="bottom" constant="112" id="w5L-6W-Uf9"/>
+                            <constraint firstItem="vqa-dT-48I" firstAttribute="leading" secondItem="gex-3D-ZGX" secondAttribute="leading" id="wWb-gp-8Bx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tvShowSunriseTime" destination="vqa-dT-48I" id="3JD-a4-njY"/>
+                        <outlet property="txtCityName" destination="gex-3D-ZGX" id="YJN-ki-hK5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+</document>
