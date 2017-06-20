@@ -22,6 +22,7 @@ class ViewController: UIViewController {
             txtTitle.text = note.title
             txtDes.text = note.details
         }
+     
     }
 
     @IBAction func buSave(_ sender: Any) {
@@ -51,4 +52,6 @@ class ViewController: UIViewController {
     
     
 }
+
+
 

@@ -11,14 +11,16 @@ import CoreData
 class VCListNotes: UIViewController,UITableViewDelegate,UITableViewDataSource  {
 var listNotes = [MyNotes]()
  
+    @IBOutlet weak var myview: UIView!
     
     @IBOutlet weak var tvNotesList: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-     loadNotes()
+        loadNotes()
         tvNotesList.delegate = self
         tvNotesList.dataSource = self
-        // Do any additional setup after loading the view.
+        
+          // self.tvNotesList.contentInset = UIEdgeInsetsMake(5, 5, 5, 5)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -64,6 +66,8 @@ var listNotes = [MyNotes]()
                 }
             }
         }
+        dismiss(animated: true, completion: nil)
+       
     }
     
     @IBAction func buAdd(_ sender: Any) {
@@ -81,5 +85,8 @@ var listNotes = [MyNotes]()
         }
     }
     
-
+    
 }
+
+ 
+
