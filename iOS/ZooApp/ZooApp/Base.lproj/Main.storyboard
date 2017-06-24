@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZooApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="154" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fRY-FB-7dY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.83137254900000002" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellAnimal" rowHeight="154" id="O9s-tE-eyp" customClass="TVCAnimal" customModule="ZooApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="154"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="O9s-tE-eyp" id="E8b-Z3-Wll">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="153.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AIe-91-shC">
+                                                    <rect key="frame" x="8" y="8" width="359" height="138"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="baboon" translatesAutoresizingMaskIntoConstraints="NO" id="YqE-21-Aom">
+                                                            <rect key="frame" x="8" y="11" width="110" height="115"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="110" id="Smt-ne-Cmf"/>
+                                                                <constraint firstAttribute="height" constant="100" id="ZOR-AD-VqZ"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhl-5m-ojx">
+                                                            <rect key="frame" x="122" y="11" width="229" height="21"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mIk-4d-JoH">
+                                                            <rect key="frame" x="122" y="36" width="229" height="94"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="94" id="Efo-5f-bev"/>
+                                                            </constraints>
+                                                            <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="mIk-4d-JoH" firstAttribute="trailing" secondItem="Bhl-5m-ojx" secondAttribute="trailing" id="1Ii-dZ-oob"/>
+                                                        <constraint firstItem="mIk-4d-JoH" firstAttribute="leading" secondItem="Bhl-5m-ojx" secondAttribute="leading" id="2KY-PS-OdY"/>
+                                                        <constraint firstAttribute="bottom" secondItem="YqE-21-Aom" secondAttribute="bottom" constant="12" id="2Yo-wj-PbV"/>
+                                                        <constraint firstItem="Bhl-5m-ojx" firstAttribute="top" secondItem="AIe-91-shC" secondAttribute="top" constant="11" id="5NB-5S-xSp"/>
+                                                        <constraint firstItem="YqE-21-Aom" firstAttribute="top" secondItem="AIe-91-shC" secondAttribute="top" constant="11" id="HMR-tL-OiN"/>
+                                                        <constraint firstItem="YqE-21-Aom" firstAttribute="leading" secondItem="AIe-91-shC" secondAttribute="leading" constant="8" id="W02-Ai-xIR"/>
+                                                        <constraint firstItem="mIk-4d-JoH" firstAttribute="top" secondItem="Bhl-5m-ojx" secondAttribute="bottom" constant="4" id="jt1-aa-0Ru"/>
+                                                        <constraint firstItem="Bhl-5m-ojx" firstAttribute="leading" secondItem="YqE-21-Aom" secondAttribute="trailing" constant="4" id="m9b-sA-UWj"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Bhl-5m-ojx" secondAttribute="trailing" constant="8" id="wTQ-R3-sAd"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.83137254901960778" green="0.82745098039215681" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="AIe-91-shC" firstAttribute="top" secondItem="E8b-Z3-Wll" secondAttribute="top" constant="8" id="CEj-vL-1G9"/>
+                                                <constraint firstItem="AIe-91-shC" firstAttribute="leading" secondItem="E8b-Z3-Wll" secondAttribute="leading" constant="8" id="X23-Cy-VqE"/>
+                                                <constraint firstAttribute="bottom" secondItem="AIe-91-shC" secondAttribute="bottom" constant="8" id="ZpY-te-gkX"/>
+                                                <constraint firstAttribute="trailing" secondItem="AIe-91-shC" secondAttribute="trailing" constant="8" id="rqS-cb-LSV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.83137254900000002" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="ivAnimalImage" destination="YqE-21-Aom" id="nc6-AG-W39"/>
+                                            <outlet property="laAnimalDes" destination="mIk-4d-JoH" id="w6O-cc-h17"/>
+                                            <outlet property="laAnimalName" destination="Bhl-5m-ojx" id="gEv-H4-92k"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fRY-FB-7dY" secondAttribute="bottom" id="Fho-lN-QI6"/>
+                            <constraint firstItem="fRY-FB-7dY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HkU-Wv-fuq"/>
+                            <constraint firstAttribute="trailing" secondItem="fRY-FB-7dY" secondAttribute="trailing" id="ZS3-w7-Q7R"/>
+                            <constraint firstItem="fRY-FB-7dY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xLn-qS-h9F"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tvListAnimals" destination="fRY-FB-7dY" id="8oM-2Y-lvT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="baboon" width="100" height="100"/>
+    </resources>
+</document>
