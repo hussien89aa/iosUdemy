@@ -24,14 +24,15 @@ UINavigationControllerDelegate{
         imagePicker.delegate = self
         self.ref = FIRDatabase.database().reference()
         
-        
-        if let user = FIRAuth.auth()?.currentUser{
+        if let user = FIRAuth.auth()?.currentUser {
+            
             self.UserUID = user.uid
-            print("user login:\(String(describing: self.UserUID))" )
             GotToPosting()
         }
+        
     }
-
+    
+    
     @IBAction func buPickImage(_ sender: Any) {
         
        present(imagePicker, animated: true, completion: nil)
@@ -109,7 +110,11 @@ UINavigationControllerDelegate{
     
     func GotToPosting(){
         
-        performSegue(withIdentifier: "ShowPosts", sender:self.UserUID )
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "ShowPosts", sender:self.UserUID )
+            
+        }
+        dismiss(animated: true, completion: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
