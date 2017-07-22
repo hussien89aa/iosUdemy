@@ -13,6 +13,7 @@ class VCPosting: UIViewController,UITableViewDelegate,UITableViewDataSource  {
     var ref = FIRDatabaseReference.init()
     var UserUID:String?
     var listOfPosts = [Post]()
+    var interstitial:GADInterstitial!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.ref = FIRDatabase.database().reference()
@@ -24,8 +25,22 @@ class VCPosting: UIViewController,UITableViewDelegate,UITableViewDataSource  {
         tvListPosts.dataSource = self
         // Do any additional setup after loading the view.
         loadPostFormFirebase()
+        
+        // Ads init
+        interstitial=GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+        let request=GADRequest()
+        interstitial.load(request)
+        
+      
     }
     
+    @IBAction func buShowAds(_ sender: Any) {
+        if interstitial.isReady {
+            interstitial.present(fromRootViewController: self)
+        }else{
+            print("Ads didnot loaded yet from the server")
+        }
+    }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

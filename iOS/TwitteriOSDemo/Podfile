@@ -10,6 +10,7 @@ target 'TwitteriOSDemo' do
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
   pod 'Firebase/Database'
+  pod 'Firebase/AdMob'
   
 
 end

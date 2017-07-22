@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -131,7 +131,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="181" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Fo-TR-epZ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.83137254901960778" green="0.82745098039215681" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -356,13 +356,28 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aI5-Kj-8lJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="vTY-fQ-xsF">
+                                        <barButtonItem key="rightBarButtonItem" title="Show Ads" id="fx3-Kb-DPQ">
+                                            <connections>
+                                                <action selector="buShowAds:" destination="8rC-pF-FhD" id="SCx-Af-IWD"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9Fo-TR-epZ" firstAttribute="bottom" secondItem="Qce-nV-868" secondAttribute="top" id="0vy-Eb-tv5"/>
-                            <constraint firstItem="9Fo-TR-epZ" firstAttribute="top" secondItem="FbC-on-bEJ" secondAttribute="top" id="BYd-pa-gtB"/>
-                            <constraint firstItem="9Fo-TR-epZ" firstAttribute="leading" secondItem="FbC-on-bEJ" secondAttribute="leading" id="SxF-sn-U8m"/>
-                            <constraint firstAttribute="trailing" secondItem="9Fo-TR-epZ" secondAttribute="trailing" id="c6D-qt-2KQ"/>
+                            <constraint firstItem="9Fo-TR-epZ" firstAttribute="leading" secondItem="FbC-on-bEJ" secondAttribute="leading" id="1A6-sH-M18"/>
+                            <constraint firstAttribute="trailing" secondItem="aI5-Kj-8lJ" secondAttribute="trailing" id="24q-cu-Nkj"/>
+                            <constraint firstItem="aI5-Kj-8lJ" firstAttribute="leading" secondItem="FbC-on-bEJ" secondAttribute="leading" id="CZZ-m9-dH3"/>
+                            <constraint firstItem="aI5-Kj-8lJ" firstAttribute="top" secondItem="FbC-on-bEJ" secondAttribute="top" id="D9R-1Y-Xuq"/>
+                            <constraint firstItem="9Fo-TR-epZ" firstAttribute="top" secondItem="aI5-Kj-8lJ" secondAttribute="bottom" id="M4J-zy-z6A"/>
+                            <constraint firstAttribute="trailing" secondItem="9Fo-TR-epZ" secondAttribute="trailing" id="a4Z-4x-h0o"/>
+                            <constraint firstItem="Qce-nV-868" firstAttribute="top" secondItem="9Fo-TR-epZ" secondAttribute="bottom" id="c4W-9e-Jqh"/>
                         </constraints>
                     </view>
                     <connections>

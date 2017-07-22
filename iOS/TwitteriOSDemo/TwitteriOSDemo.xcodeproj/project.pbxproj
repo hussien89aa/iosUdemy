@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B7D17CFDFFA193288A876B6F /* Pods_TwitteriOSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB453CD3EA74AD8277B96D1 /* Pods_TwitteriOSDemo.framework */; };
-		C7760D3A1F0217D1009035AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7760D391F0217D1009035AE /* GoogleService-Info.plist */; };
+		C7295B9F1F21A68000024510 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7295B9E1F21A68000024510 /* GoogleService-Info.plist */; };
 		C79F3F5C1EFA2B9B007094E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F3F5B1EFA2B9B007094E6 /* AppDelegate.swift */; };
 		C79F3F5E1EFA2B9B007094E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F3F5D1EFA2B9B007094E6 /* ViewController.swift */; };
 		C79F3F611EFA2B9B007094E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79F3F5F1EFA2B9B007094E6 /* Main.storyboard */; };
@@ -23,7 +23,7 @@
 
 /* Begin PBXFileReference section */
 		3E46388397E611FF9CC4BBBE /* Pods-TwitteriOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitteriOSDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitteriOSDemo/Pods-TwitteriOSDemo.release.xcconfig"; sourceTree = "<group>"; };
-		C7760D391F0217D1009035AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C7295B9E1F21A68000024510 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C79F3F581EFA2B9B007094E6 /* TwitteriOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitteriOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79F3F5B1EFA2B9B007094E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C79F3F5D1EFA2B9B007094E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		C79F3F5A1EFA2B9B007094E6 /* TwitteriOSDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C7760D391F0217D1009035AE /* GoogleService-Info.plist */,
+				C7295B9E1F21A68000024510 /* GoogleService-Info.plist */,
 				C79F3F5B1EFA2B9B007094E6 /* AppDelegate.swift */,
 				C79F3F5D1EFA2B9B007094E6 /* ViewController.swift */,
 				C79F3F5F1EFA2B9B007094E6 /* Main.storyboard */,
@@ -168,7 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C79F3F661EFA2B9B007094E6 /* LaunchScreen.storyboard in Resources */,
-				C7760D3A1F0217D1009035AE /* GoogleService-Info.plist in Resources */,
+				C7295B9F1F21A68000024510 /* GoogleService-Info.plist in Resources */,
 				C79F3F631EFA2B9B007094E6 /* Assets.xcassets in Resources */,
 				C79F3F611EFA2B9B007094E6 /* Main.storyboard in Resources */,
 			);

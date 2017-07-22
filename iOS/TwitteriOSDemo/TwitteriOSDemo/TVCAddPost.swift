@@ -22,6 +22,7 @@ UINavigationControllerDelegate {
     }
 
     @IBAction func buAttachImage(_ sender: Any) {
+        
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         main!.present(imagePicker, animated: true, completion: nil)
